@@ -1,0 +1,6 @@
+{
+  "window_size": 11,
+  "min_duration": 10,
+  "hysteresis": 0.5,
+  "frame_expansion": 15
+}
