@@ -10,9 +10,6 @@ This repository showcases my project focused on sports tracking and automating v
 - [Thought Process](#thought-process)
 - [Design Choices](#design-choices)
 - [Implementation Details](#implementation-details)
-- [File Structure](#file-structure)
-- [Setup](#setup)
-- [Usage](#usage)
 
 ---
 
