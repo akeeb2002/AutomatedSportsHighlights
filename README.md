@@ -98,9 +98,9 @@ Follow these steps to set up your environment and reproduce the highlight reel f
 git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
 cd AutomatedSportsHighlights
 ### Step 2: Set Up a Virtual Environment
-# Create a virtual environment
+###  Create a virtual environment
 python3 -m venv venv
-# Activate the virtual environment
+###  Activate the virtual environment
 ### On macOS/Linux:
 source venv/bin/activate
 ###  On Windows:
@@ -114,7 +114,7 @@ Ensure you have the following files in the appropriate directories:
 - Raw Video Files: Place your corresponding .mp4 video files in the videos/ folder.
 You can modify the paths in the scripts if your file organization differs.
 
-## Reproducing the Highlight Reel
+### Reproducing the Highlight Reel
 Here’s how to go from raw data to a polished highlight reel:
 
 
