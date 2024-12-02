@@ -98,12 +98,12 @@ Follow these steps to set up your environment and reproduce the highlight reel f
 git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
 cd AutomatedSportsHighlights
 ### Step 2: Set Up a Virtual Environment
-Create a virtual environment
+# Create a virtual environment
 python3 -m venv venv
-Activate the virtual environment
-On macOS/Linux:
+# Activate the virtual environment
+# On macOS/Linux:
 source venv/bin/activate
-On Windows:
+# On Windows:
 venv\Scripts\activate
 ### Step 3: Install Dependencies
 Install the required Python libraries listed in the requirements.txt file.
