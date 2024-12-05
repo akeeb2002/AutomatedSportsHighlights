@@ -89,15 +89,52 @@ Key deliverables include a CSV of predictions, a highlight video with transition
    - Highlight video (`output_video.mp4`) showcasing classified actions and transitions.
 
 ---
-
 ## Installation/Setup
 
 Follow these steps to set up your environment and reproduce the highlight reel from raw data:
 
-### Step 1: Clone the Repository
+# Step 1: Clone the Repository
 git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
+cd AutomatedSportsHighlights
 
+# Step 2: Install Anaconda (Optional, Recommended)
+# Windows:
+# Download and run the Miniconda installer for Windows: https://docs.conda.io/en/latest/miniconda.html
+# Open the Anaconda Prompt from your Start menu to proceed with the setup.
 
+# macOS:
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+bash Miniconda3-latest-MacOSX-arm64.sh
+source ~/.bash_profile
 
+# Linux:
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
 
+# Step 3: Set Up the Conda Environment
+conda env create -f environment.yaml
+conda activate mleng_env
 
+# Step 4: Reproduce the Highlight Reel
+
+# Generate additional features from provided_data.csv:
+python data_analysis.py
+# Output: sudden_change.csv and visualizations like plot.png.
+
+# Train the model and generate predictions:
+python time_classification.py
+# Input: provided_data.csv, target.csv
+# Output: predictions.csv
+
+# Apply filters to predictions for smoothing:
+python filter_predictions.py
+# Input: predictions.csv
+# Output: smoothed_predictions.csv, predictions_comparison.png
+
+# Create the final highlight reel:
+python opencv_intro.py
+# Input: smoothed_predictions.csv
+# Output: output_video.mp4
+
+# The resulting video can be found in the project directory as output_video.mp4.
