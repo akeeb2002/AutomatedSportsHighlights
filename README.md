@@ -99,16 +99,16 @@ git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
 cd AutomatedSportsHighlights
 
 ### Step 2: Install Anaconda (Optional, Recommended)
-# Windows:
-# Download and run the Miniconda installer for Windows: https://docs.conda.io/en/latest/miniconda.html
-# Open the Anaconda Prompt from your Start menu to proceed with the setup.
+Windows:
+Download and run the Miniconda installer for Windows: https://docs.conda.io/en/latest/miniconda.html
+Open the Anaconda Prompt from your Start menu to proceed with the setup.
 
-# macOS:
+macOS:
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
 bash Miniconda3-latest-MacOSX-arm64.sh
 source ~/.bash_profile
 
-# Linux:
+### Linux:
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
@@ -120,7 +120,7 @@ conda activate mleng_env
 
 ### Step 4: Reproduce the Highlight Reel
 
-# Generate additional features and insights from provided_data.csv:
+### Generate additional features and insights from provided_data.csv:
 python data_analysis.py
 Output: visualizations like plot.png.
 
@@ -128,19 +128,19 @@ python highlight_features.py
 Output: featuresvideo.mp4
 
 
-# Train the model and generate predictions:
+### Train the model and generate predictions:
 python time_classification.py
 Input: provided_data.csv, target.csv
 Output: predictions.csv
 
-# Smoothing predictions for better results:
+### Smoothing predictions for better results:
 python filter_predictions.py
 Input: predictions.csv. target.csv
 Output: smoothed_predictions.csv, predictions_comparison.png
 
-# Create the final highlight reel:
+### Create the final highlight reel:
 python opencv_intro.py
 Input: smoothed_predictions.csv
 Output: output_video.mp4
 
-# The resulting video can be found in the project directory as output_video.mp4.
+### The resulting video can be found in the project directory as output_video.mp4.
