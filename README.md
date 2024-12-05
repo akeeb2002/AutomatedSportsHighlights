@@ -95,6 +95,7 @@ Follow these steps to set up your environment and reproduce the highlight reel f
 
 # Step 1: Clone the Repository
 git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
+
 cd AutomatedSportsHighlights
 
 # Step 2: Install Anaconda (Optional, Recommended)
@@ -114,22 +115,27 @@ source ~/.bashrc
 
 # Step 3: Set Up the Conda Environment
 conda env create -f environment.yaml
+
 conda activate mleng_env
 
 # Step 4: Reproduce the Highlight Reel
 
-# Generate additional features from provided_data.csv:
+# Generate additional features and insights from provided_data.csv:
 python data_analysis.py
-# Output: sudden_change.csv and visualizations like plot.png.
+# Output: visualizations like plot.png.
+
+python highlight_features.py
+# Output: featuresvideo.mp4
+
 
 # Train the model and generate predictions:
 python time_classification.py
 # Input: provided_data.csv, target.csv
 # Output: predictions.csv
 
-# Apply filters to predictions for smoothing:
+# Smoothing predictions for better results:
 python filter_predictions.py
-# Input: predictions.csv
+# Input: predictions.csv. target.csv
 # Output: smoothed_predictions.csv, predictions_comparison.png
 
 # Create the final highlight reel:
