@@ -93,12 +93,12 @@ Key deliverables include a CSV of predictions, a highlight video with transition
 
 Follow these steps to set up your environment and reproduce the highlight reel from raw data:
 
-# Step 1: Clone the Repository
+### Step 1: Clone the Repository
 git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
 
 cd AutomatedSportsHighlights
 
-# Step 2: Install Anaconda (Optional, Recommended)
+### Step 2: Install Anaconda (Optional, Recommended)
 # Windows:
 # Download and run the Miniconda installer for Windows: https://docs.conda.io/en/latest/miniconda.html
 # Open the Anaconda Prompt from your Start menu to proceed with the setup.
@@ -113,12 +113,12 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/.bashrc
 
-# Step 3: Set Up the Conda Environment
+### Step 3: Set Up the Conda Environment
 conda env create -f environment.yaml
 
 conda activate mleng_env
 
-# Step 4: Reproduce the Highlight Reel
+### Step 4: Reproduce the Highlight Reel
 
 # Generate additional features and insights from provided_data.csv:
 python data_analysis.py
