@@ -130,5 +130,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python opencv_intro.py tracking_visualization.mp4 --csv "smoothed_predictions.csv" --filters
-
+# python opencv_intro.py video.mp4 --csv "smoothed_predictions.csv" 

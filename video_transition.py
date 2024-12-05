@@ -25,7 +25,7 @@ def create_transition(cap, start_frame, end_frame, transition_type='fade', durat
     ret, frame2 = cap.read()
     
     if not ret or frame1 is None or frame2 is None:
-        raise ValueError("Could not read frames")
+        raise ValueError("Could not read frames at positions {} and {}".format(start_frame, end_frame))
     
     # Convert frames to float32 for better transition quality
     frame1 = frame1.astype(np.float32)
@@ -79,6 +79,9 @@ def main():
     try:
         # Create a fade transition between frame 100 and frame 200
         transition_frames = create_transition(cap, 100, 200, transition_type='fade', duration_frames=30)
+        
+        if not transition_frames:
+            raise ValueError("No transition frames were created.")
         
         # Create video writer for saving the transition
         first_frame = transition_frames[0]
