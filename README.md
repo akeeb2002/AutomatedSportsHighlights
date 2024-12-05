@@ -10,6 +10,7 @@ This repository showcases my project focused on sports tracking and automating v
 - [Thought Process](#thought-process)
 - [Design Choices](#design-choices)
 - [Implementation Details](#implementation-details)
+- [Improvements](#improvements)
 - [Installation/Setup](#installationsetup)
 
 ---
@@ -63,6 +64,15 @@ Key deliverables include a CSV of predictions, a highlight video with transition
 
 5. **OpenCV for Video Processing**:
    - Selected for its robust library of tools, ensuring high-quality video frame manipulation.
+
+---
+
+## Improvements
+This is the improvements from my feature engineering and model optimization work:
+<img width="707" alt="Screenshot 2024-12-05 at 12 56 26 AM" src="https://github.com/user-attachments/assets/4277fe78-45b5-4737-8c3f-960303409055">
+
+I did not keep a record of my work before i did the optimization but i did have it copy pasted along with the screenshot of my improved model.
+
 
 ---
 
