@@ -149,7 +149,7 @@ Input: predictions.csv. target.csv
 Output: smoothed_predictions.csv, predictions_comparison.png
 
 ### Create the final highlight reel:
-python opencv_intro.py tracking_visualization.mp4 --csv "smoothed_predictions.csv"
+python opencv_intro.py video.mp4 --csv "smoothed_predictions.csv"
 
 Input: smoothed_predictions.csv
 Output: output_video.mp4
