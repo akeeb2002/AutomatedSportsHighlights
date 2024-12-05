@@ -96,26 +96,7 @@ Follow these steps to set up your environment and reproduce the highlight reel f
 
 ### Step 1: Clone the Repository
 git clone https://github.com/akeeb2002/AutomatedSportsHighlights.git
-cd AutomatedSportsHighlights
-### Step 2: Set Up a Virtual Environment
-###  Create a virtual environment
-python3 -m venv venv
-###  Activate the virtual environment
-### On macOS/Linux:
-source venv/bin/activate
-###  On Windows:
-venv\Scripts\activate
-### Step 3: Install Dependencies
-Install the required Python libraries listed in the requirements.txt file.
-pip install -r requirements.txt
-### Step 4: Organize Input Files
-Ensure you have the following files in the appropriate directories:
-- Raw Tracking Data: Place your .csv tracking data files in the data/ folder.
-- Raw Video Files: Place your corresponding .mp4 video files in the videos/ folder.
-You can modify the paths in the scripts if your file organization differs.
 
-### Reproducing the Highlight Reel
-Here’s how to go from raw data to a polished highlight reel:
 
 
 
