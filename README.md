@@ -122,25 +122,25 @@ conda activate mleng_env
 
 # Generate additional features and insights from provided_data.csv:
 python data_analysis.py
-# Output: visualizations like plot.png.
+Output: visualizations like plot.png.
 
 python highlight_features.py
-# Output: featuresvideo.mp4
+Output: featuresvideo.mp4
 
 
 # Train the model and generate predictions:
 python time_classification.py
-# Input: provided_data.csv, target.csv
-# Output: predictions.csv
+Input: provided_data.csv, target.csv
+Output: predictions.csv
 
 # Smoothing predictions for better results:
 python filter_predictions.py
-# Input: predictions.csv. target.csv
-# Output: smoothed_predictions.csv, predictions_comparison.png
+Input: predictions.csv. target.csv
+Output: smoothed_predictions.csv, predictions_comparison.png
 
 # Create the final highlight reel:
 python opencv_intro.py
-# Input: smoothed_predictions.csv
-# Output: output_video.mp4
+Input: smoothed_predictions.csv
+Output: output_video.mp4
 
 # The resulting video can be found in the project directory as output_video.mp4.
