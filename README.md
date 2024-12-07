@@ -2,7 +2,8 @@
 
 This repository showcases my project focused on sports tracking and automating video transitions. The main objectives were to process tracking data, classify player actions, and create smooth video transitions to enhance highlight generation. This project serves as a step in my learning journey, combining machine learning, video processing, and data analysis.
 
-My Highlight Reel: https://youtu.be/IRc0AtZFc4Y
+My Highlight Reel: https://youtu.be/m3fF_xqsDb0
+
 
 ---
 
